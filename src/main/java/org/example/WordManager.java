@@ -14,7 +14,7 @@ public class WordManager {
 
     public int showMenu() {
 
-        System.out.print("*** 영단어 마스터 ***\n" +
+        System.out.print(" \n" +
                 "*******************\n" +
                 "1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
@@ -25,7 +25,7 @@ public class WordManager {
                 "7. 파일 저장\n" +
                 "0. 나가기\n" +
                 "*******************\n" +
-                "=> 원하는 메뉴는? : ");
+                "=> 원하는 메뉴는? : " );
 
         return s.nextInt();
     }
