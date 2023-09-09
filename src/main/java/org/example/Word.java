@@ -48,4 +48,16 @@ public class Word {
     public void setDefinition(String definition) {
         this.definition = definition;
     }
+
+    public String toString() {
+
+        String sdifficulty = "";
+
+        for (int i = 0; i < difficulty; i++) sdifficulty += "*";
+
+        String str = String.format("%-3s", sdifficulty) + String.format("%15s", term) + " " + definition;
+
+        return str;
+    }
+
 }
