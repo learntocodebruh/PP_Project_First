@@ -32,6 +32,9 @@ public class WordManager {
 
     public void startProgram() {
 
+
+        wordCRUD.loadFile();
+
         while (true) {
 
             int pick = showMenu();
@@ -43,15 +46,47 @@ public class WordManager {
                 break;
             }
 
-            if (pick == 1) {
+            if (pick == 1) { // 모든 단어 보기
 
                 wordCRUD.listAll();
+
+            }
+
+            if (pick == 2) { // 수준별 단어 보기
+
+                wordCRUD.searchDifficulty();
+
+            }
+
+            if (pick == 3) { // 단어 검색
+
+                wordCRUD.searchTerm();
 
             }
 
             if (pick == 4) {
 
                 wordCRUD.addItem();
+
+
+            }
+
+            if (pick == 5) { // 단어 수정
+
+                wordCRUD.updateItem();
+
+
+            }
+
+            if (pick == 6) { // 단어 삭제
+
+                wordCRUD.deleteItem();
+            }
+
+            if (pick == 7) { // 파일 저장
+
+                wordCRUD.saveFile();
+
 
 
             }

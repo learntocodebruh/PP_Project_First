@@ -60,4 +60,9 @@ public class Word {
         return str;
     }
 
+    public String toFileString() {
+
+        return this.difficulty + "|" + this.term + "|" + this.definition;
+    }
+
 }
