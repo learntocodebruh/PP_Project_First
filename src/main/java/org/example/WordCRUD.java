@@ -191,7 +191,7 @@ public class WordCRUD implements ICRUD {
     public void saveFile() {
 
         try {
-            PrintWriter pr = new PrintWriter(new FileWriter(fname));
+            PrintWriter pr = new PrintWriter(new FileWriter("temp.txt"));
 
             for (Word one : list) {
 
