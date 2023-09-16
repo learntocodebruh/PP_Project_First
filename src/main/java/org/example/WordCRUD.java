@@ -8,7 +8,7 @@ public class WordCRUD implements ICRUD {
 
     ArrayList<Word> list;
     Scanner s;
-    final String fname = "C:\\Users\\manda\\IdeaProjects\\PP_Project_First\\target\\slang.txt";
+    final String fname = "C:\\Users\\manda\\IdeaProjects\\PP_Project_First\\target\\dictionary.txt";
 
     WordCRUD(Scanner s){
 
@@ -38,7 +38,6 @@ public class WordCRUD implements ICRUD {
 
         System.out.println();
         System.out.println("새 단어가 단어장에 추가되었습니다 !!!");
-
 
     }
 
@@ -96,11 +95,11 @@ public class WordCRUD implements ICRUD {
         }
         System.out.println("------------------------------");
 
-
     }
 
     public void updateItem() {
 
+        System.out.println();
         System.out.print("=> 수정할 단어 검색 : ");
         String searched_word = s.next();
 
@@ -126,6 +125,7 @@ public class WordCRUD implements ICRUD {
 
     public void deleteItem() {
 
+        System.out.println();
         System.out.print("=> 삭제할 단어 검색 : ");
         String eliminating_word = s.next();
 
@@ -216,11 +216,9 @@ public class WordCRUD implements ICRUD {
 
         listAll(difficulty);
 
-
     }
 
     public void searchTerm() {
-
 
         System.out.print("=> 검색할 단어 입력 : ");
 
