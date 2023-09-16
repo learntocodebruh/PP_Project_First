@@ -17,7 +17,6 @@ public class WordCRUD implements ICRUD {
     }
 
 
-    @Override
     public Object add() {
 
         System.out.println();
@@ -41,21 +40,6 @@ public class WordCRUD implements ICRUD {
         System.out.println("새 단어가 단어장에 추가되었습니다 !!!");
 
 
-    }
-
-    @Override
-    public int update(Object obj) {
-        return 0;
-    }
-
-    @Override
-    public int delete(Object obj) {
-        return 0;
-    }
-
-    @Override
-    public int select(int number) {
-        return 0;
     }
 
     public void listAll() {
@@ -197,6 +181,8 @@ public class WordCRUD implements ICRUD {
             }
 
             br.close();
+            System.out.println("=> " + count + "개 단어 로딩 완료!");
+            System.out.println();
         } catch (IOException e) {
 
             e.printStackTrace();
