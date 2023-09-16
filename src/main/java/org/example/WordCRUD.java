@@ -182,7 +182,6 @@ public class WordCRUD implements ICRUD {
 
             br.close();
             System.out.println("=> " + count + "개 단어 로딩 완료!");
-            System.out.println();
         } catch (IOException e) {
 
             e.printStackTrace();
@@ -201,7 +200,9 @@ public class WordCRUD implements ICRUD {
 
             pr.close();
 
-            System.out.print("===>데이터 저장 완료");
+            System.out.println();
+            System.out.print("모든 단어 파일 저장 완료 !!!");
+            System.out.println();
 
         } catch (IOException e) {
             throw new RuntimeException(e);

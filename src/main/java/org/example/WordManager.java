@@ -15,6 +15,8 @@ public class WordManager {
     public int showMenu() {
 
         System.out.print(" \n" +
+                "*** 영단어 마스터 ***\n" +
+                "\n"+
                 "*******************\n" +
                 "1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
